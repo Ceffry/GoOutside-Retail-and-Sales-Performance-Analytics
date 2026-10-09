@@ -188,10 +188,10 @@ This was a collaborative group project developed to analyze GoOutside’s retail
 
 My primary contributions were:
 
-* **Page 1: Market Overview:** Developed the market overview dashboard and its supporting analysis.
-* **Page 3: Financial Performance:** Developed the financial performance dashboard, focusing on sales revenue and profitability.
+* **Page 1: Retailer Market Overview:** Developed the market overview dashboard and its supporting analysis.
+* **Page 3: Order Method Performance:** Developed the financial performance dashboard, focusing on sales revenue and profitability.
 
-**Page 2: Market Opportunities** was primarily developed by my group partner.
+**Page 2: Retailer Details** was primarily developed by my group partner.
 
 The final project combines our contributions into a unified dashboard to support data-driven business decisions.
 
