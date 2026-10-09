@@ -30,7 +30,7 @@ Provides an overview of the markets GoOutside operates in, including retailer di
 * Which countries generate the most revenue?
 * How are retailers distributed across markets?
 * Which retailer types contribute the most sales volume?
-* How does the retailer network vary across countries?
+* How does the retailer vary across the different types?
 
 ### Page 2 — Retailer & Market Opportunities
 
@@ -46,12 +46,6 @@ Focuses on retailer market share and market concentration to help identify where
 * Are markets concentrated among a few large retailers or distributed across many retailers?
 * Where could GoOutside prioritise its retail partnership strategy?
 
-The dashboard supports two strategic scenarios defined in the project brief:
-
-* **Concentrated markets:** Target a 10% increase in sales volume per retailer.
-* **Competitive markets:** Target a 15% increase in the number of retailers.
-
-These are proposed strategic targets, rather than measured outcomes.
 
 ### Page 3 — Order & Financial Performance
 
@@ -66,9 +60,6 @@ Examines revenue and gross profit across order methods and product categories, h
 * Which order methods generate the most revenue?
 * Which methods contribute the most gross profit?
 * Which product categories perform best financially?
-* Which products may warrant further investigation?
-
-*Note: Personnel cost data was not available in the supplied tables, so profit after personnel costs and final keep/review/phase-out recommendations could not be calculated.*
 
 ---
 
@@ -78,17 +69,15 @@ The dashboards include interactive controls that allow users to explore the data
 
 ### Exploring the Market Overview
 
-![Market Overview Interaction](assets/gifs/market-overview-interactive.gif)
+![Market Overview Interaction](gifs/01_market-overview-interactive.gif)
 
 ### Exploring Retailer Opportunities
 
-![Market Opportunities Interaction](assets/gifs/market-opportunities-interactive.gif)
+![Market Opportunities Interaction](gifs/02_retailer-details-interactive.gif)
 
 ### Exploring Financial Performance
 
-![Financial Performance Interaction](assets/gifs/financial-performance-interactive.gif)
-
-*The GIFs demonstrate the dashboard's interactive functionality, including filtering and exploring the visualisations.*
+![Financial Performance Interaction](gifs/03_order-method-performance-interactive.gif)
 
 ---
 
@@ -136,7 +125,7 @@ Connected the analytical data in BigQuery to Looker Studio and designed three da
 The visualisations included:
 
 * KPI summaries.
-* Bar charts for country, retailer, order-method, and product comparisons.
+* Bar charts for country, retailer and order-method.
 * Market-share and concentration analysis.
 * Tables for detailed performance comparisons.
 * Interactive filters for exploring the data.
@@ -150,43 +139,42 @@ The visualisations included:
 | **Google BigQuery** | Data exploration, querying, and transformation                              |
 | **SQL**             | Joins, aggregations, calculated metrics, ranking, and market-share analysis |
 | **Looker Studio**   | Interactive dashboards and visual reporting                                 |
-| **GitHub**          | Version control and project documentation                                   |
+| **Google Sheets**   | Data exploration and first analysis with pivot tables                       |
 
-## Skills Demonstrated
-
-* SQL data transformation and aggregation
-* Relational data joins
-* Window functions and retailer ranking
-* Data quality validation
-* Revenue and gross profit analysis
-* Market share and concentration analysis
-* Business intelligence and dashboard development
-* Stakeholder-focused data storytelling
-* Translating business requirements into analytical questions
-
----
-
-## Limitations & Next Steps
-
-The project was developed using the fields available in the supplied dataset. Several extensions would strengthen the analysis:
-
-* **Personnel costs:** Integrate personnel cost data to calculate profit after personnel costs and support keep/review/phase-out decisions.
-* **Order identification:** Incorporate a reliable order identifier to calculate unique order counts and order contribution.
-* **Market classification:** Agree on concentration thresholds with stakeholders before formally classifying markets as concentrated or competitive.
-* **Trend analysis:** Add a date-based analysis to understand how revenue, sales volume, and retailer performance change over time.
-* **Recommendations:** Validate proposed growth targets against historical performance and operational capacity.
 
 ## Project Outcome
 
 The final deliverable is a three-page interactive business intelligence dashboard that connects technical data analysis with practical business questions.
 
-By separating the reporting into market overview, retailer opportunities, and financial performance, the project provides Dustin and Sarah with views tailored to their respective responsibilities.
+By separating the reporting into retailer market overview, retailer details, and order methaods performance, the project provides Dustin and Sarah with views tailored to their respective responsibilities.
 
 **The main objective was not simply to visualise data, but to make it easier to explore business performance and identify where further action may be needed.**
 
 ## Project Structure
 
+```text
+GoOutside-Retail-and-Sales-Performance-Analytics/
+│
+├── README.md
+│
+├── dashboard/
+│   ├── 01_retailers_market_overview.png
+│   ├── 02_retailer_details.png
+│   └── 03_order_method_performance.png
+│
+├──gifs/
+│  ├── 01_market-overview-interactive.gif
+│  ├── 02_retailer-details-interactive.gif
+│  └── 03_order-method-performance-interactive.gif
+│
+└── sql/
+    ├── 01_market_overview.sql
+    ├── 02_retailer_market_share.sql
+    ├── 03_market_concentration.sql
+    ├── 04_retailer_analysis.sql                         
+    └── 05_order_method_analysis.sql
 
+```
 
 ## My Contributions
 
@@ -194,14 +182,12 @@ This was a collaborative group project developed to analyze GoOutside’s retail
 
 My primary contributions were:
 
-* **Page 1 — Market Overview:** Developed the market overview dashboard and its supporting analysis.
-* **Page 3 — Financial Performance:** Developed the financial performance dashboard, focusing on sales revenue and profitability.
+* **Page 1: Market Overview:** Developed the market overview dashboard and its supporting analysis.
+* **Page 3: Financial Performance:** Developed the financial performance dashboard, focusing on sales revenue and profitability.
 
-**Page 2 — Market Opportunities** was primarily developed by my group partner.
+**Page 2: Market Opportunities** was primarily developed by my group partner.
 
 The final project combines our contributions into a unified dashboard to support data-driven business decisions.
 
 
 ---
-
-*This project was developed as a business analytics case study using the provided GoOutside dataset. The source dataset is not included in this repository.*
