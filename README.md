@@ -157,6 +157,12 @@ GoOutside-Retail-and-Sales-Performance-Analytics/
 │
 ├── README.md
 │
+├── data/
+│   ├── retailers.csv
+│   ├── daily_sales.csv
+│   ├── products.csv
+│   └── methods.csv
+│
 ├── dashboard/
 │   ├── 01_retailers_market_overview.png
 │   ├── 02_retailer_details.png
